@@ -14,7 +14,7 @@ tuples = [line.split(';') for line in lines if not line.startswith(';')]
 
 for i in range(len(tuples)-1):
   #print "tuples[" + str(i) + "][0]=" + tuples[i][0], "; tuples[" + str(i) + "][1]=", tuples[i][1]
-  print "'Spamhaus {}':      source => '{}', jump => \"DROP\";'".format(tuples[i][1].strip(), tuples[i][0].strip())
+  print "      'Spamhaus {0}':      source => '{1}', jump => \"DROP\";".format(tuples[i][1].strip(), tuples[i][0].strip())
 
 """
 ; Spamhaus DROP List 2016/08/16 - (c) 2016 The Spamhaus Project
